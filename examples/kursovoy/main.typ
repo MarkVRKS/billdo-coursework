@@ -4,7 +4,7 @@
   title-template: kursovoy-title,
   department: "информационных технологий и цифровой экономики",
   work-type: "КУРСОВАЯ РАБОТА",
-  discipline: "Методы и средства проектирования информационных систем", // TODO: уточни точное название предмета
+  discipline: "Методы и средства проектирования информационных систем",
   topic: "Разработка информационной системы первичного документооборота и контроля взаиморасчетов с контрагентами",
   student: "М.В. Вераксо",
   course-group: "4/147",
@@ -25,6 +25,10 @@
 #show raw.where(block: true): set par(leading: 0.55em)
 #show raw.where(block: true): set block(above: 1.2em, below: 1.2em)
 #outline()
+#show table: it => {
+  show raw: set text(font: ("Courier New", "DejaVu Sans Mono"), size: 9.5pt)
+  it
+}
 
 #include "chapters/01-vvedenie.typ"
 #include "chapters/02-proektirovanie.typ"
